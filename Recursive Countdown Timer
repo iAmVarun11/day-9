@@ -1,0 +1,11 @@
+function countdown(n, callback) {
+  const interval = setInterval(() => {
+    if (n > 0) {
+      console.log(n--);
+    } else {
+      clearInterval(interval);
+      console.log("Blast Off!");
+      if (callback) callback();
+    }
+  }, 1000);
+}
