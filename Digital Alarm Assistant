@@ -1,0 +1,15 @@
+function setAlarm(time, message, callback) {
+  const now = new Date();
+  const alarmTime = new Date(time);
+  const delay = alarmTime - now;
+
+  if (delay < 0) {
+    console.log("Time is in the past!");
+    return;
+  }
+
+  setTimeout(() => {
+    console.log(message);
+    if (callback) callback();
+  }, delay);
+}
