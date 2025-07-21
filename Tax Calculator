@@ -1,0 +1,5 @@
+function taxCalculator(amount, Rates, cb) {
+  const totalTax = taxRates.reduce((sum, rate) => sum + (amount * rate / 100), 0);
+  const finalAmount = amount + totalTax;
+  cb(finalAmount);
+}
