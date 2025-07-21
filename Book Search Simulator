@@ -1,0 +1,6 @@
+function searchBook(bookName, callback) {
+  console.log(`Searching for "${bookName}"...`);
+  setTimeout(() => {
+    callback(`Book "${bookName}" found!`);
+  }, 2000);
+}
