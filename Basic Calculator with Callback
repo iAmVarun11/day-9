@@ -1,0 +1,4 @@
+function calculate(a, b, operationCallback) {
+  const result = operationCallback(a, b);
+  console.log("Result:", result);
+}
